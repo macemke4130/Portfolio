@@ -15,16 +15,25 @@ header {
 }
 
 h1, h2 {
+    font-family: 'Staatliches', sans-serif;
     color: white;
-    text-shadow: 0.1em 0.1em 0.2em black;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    letter-spacing: 0.2em;
+    
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+}
+
+h1:hover, h2:hover {
+    letter-spacing: normal;
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 3em;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 nav {
@@ -40,6 +49,8 @@ nav a {
     border-radius: 0.5em;
     text-decoration: none;
     color: black;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 0.1em;
     font-size: 1em;
     font-weight: bold;
     box-shadow: 0.2em 0.2em 0.5em black;
@@ -58,7 +69,7 @@ nav a:hover {
 #headshot img {
     width: 100%;
     border-radius: 1.5em;
-    box-shadow: 1.5em 1.5em 5em black;
+    box-shadow: 0.2em 0.2em 0.5em black;
 }
 
 main {
@@ -69,9 +80,18 @@ main {
     grid-template-areas: 'bio headshot';
 }
 
+#bio {
+    grid-area: bio;
+}
+
+#headshot {
+    grid-area: headshot;
+}
+
 p {
+    font-family: 'Open Sans', sans-serif;
     color: white;
-    margin-top: 1em;
+    margin-bottom: 1em;
     line-height: 1.5em;
 }
 
@@ -88,6 +108,7 @@ p {
 #bio, #headshot {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     padding: 1em;
 }
 
@@ -106,11 +127,11 @@ p {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas:
-        'bio'
-        'headshot';
+        'headshot'
+        'bio';
     }
 
     #headshot img {
-        width: 100%;
+        width: 60%;
     }
 }
