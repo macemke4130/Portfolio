@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: rgb(66, 66, 66);
+    background-color: darkslategray;
+}
+
+.light-mode {
+    background-color: white;
 }
 
 header {
@@ -19,10 +23,18 @@ h1, h2 {
     color: white;
     text-shadow: 0.1em 0.1em 0.1em black;
     letter-spacing: 0.2em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    text-align: center;
+    
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+}
+
+.rainbow {
+    font-family: 'Staatliches', sans-serif;
+    color: pink;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    letter-spacing: 0.2em;
+    text-align: center;
     
     transition-timing-function: ease-in-out;
     transition-duration: 100ms;
@@ -47,7 +59,7 @@ nav {
     width: 50%;
 }
 
-nav a {
+nav a, #mode-toggle {
     background-color: white;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -68,6 +80,16 @@ nav a {
 nav a:hover {
     color: white;
     background-color: black;
+}
+
+#mode-toggle {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 0.75em;
+    margin: 1em;
+    cursor: pointer;
 }
 
 #headshot img {
@@ -97,6 +119,9 @@ p {
     color: white;
     margin-bottom: 1em;
     line-height: 1.5em;
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .white-link {
@@ -117,6 +142,12 @@ p {
 }
 
 @media only screen and (max-width: 850px) {
+    * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     nav {
         flex-direction: column;
         align-items: center;
@@ -137,5 +168,10 @@ p {
 
     #headshot img {
         width: 60%;
+    }
+
+    p {
+        text-indent: 1em;
+        padding-bottom: 0.5em;
     }
 }
