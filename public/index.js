@@ -58,8 +58,11 @@ let mobileMenu = 0;
 
 const menuToggle = () => {
     if (nav.style.display != "flex") {
+        // Show Mobile Navigation --
         nav.style.display = "flex";
+        body.style.overflow = "hidden";
     } else {
+        // Hide Mobile Navigation --
         nav.style.display = "none";
     }
 }
