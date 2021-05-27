@@ -6,6 +6,9 @@
 
 body {
     background-color: darkslategray;
+
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 .light-mode {

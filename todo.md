@@ -1,9 +1,6 @@
 # Still To Do
 
-- Light / Dark Mode Toggle Switch
 - Hamburger menu for mobile
-- Find two good fonts
-- Find color scheme - Yuck
 - Trim Bio
 - Take good headshot
 - Portfolio page
