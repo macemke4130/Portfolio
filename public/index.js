@@ -27,8 +27,8 @@ const toggleColor = () => {
     h2.style.color = "yellow";
     link.style.color = "black";
     hamburger.style.backgroundColor = "gold";
-    
-    if (nav.style.display != "flex") {
+
+    if (nav.style.display === "flex" || nav.style.display === "") {
         nav.style.backgroundColor = "pink";
     } else {
         nav.style.backgroundColor = "gold";
@@ -57,7 +57,7 @@ const toggleDark = () => {
 let mobileMenu = 0;
 
 const menuToggle = () => {
-    if (nav.style.display != "flex") {
+    if (nav.style.display === "none" || nav.style.display === "") {
         // Show Mobile Navigation --
         nav.style.display = "flex";
         body.style.overflow = "hidden";
@@ -68,11 +68,14 @@ const menuToggle = () => {
     }
 }
 
-// const windowSize = (e) => {
-//   if (e.matches) {
-//     nav.style.display = "flex";
-//   }
-// }
+const windowSize = (e) => {
+    if (e.matches) {
+        nav.style.display = "flex";
+        body.style.overflow = "hidden";
+    } else {
+        nav.style.display = "none";
+        body.style.overflow = "visible";
+    }
+}
 
-// mediaQuery.addListener(windowSize);
-// windowSize(mediaQuery);
+mediaQuery.addListener(windowSize);
