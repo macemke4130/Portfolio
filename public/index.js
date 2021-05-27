@@ -64,6 +64,7 @@ const menuToggle = () => {
     } else {
         // Hide Mobile Navigation --
         nav.style.display = "none";
+        body.style.overflow = "visible";
     }
 }
 
