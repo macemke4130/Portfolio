@@ -1,7 +1,10 @@
+<!-- Thanks for looking! -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +13,64 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
+    <div id="hamburger" onclick="menuToggle()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <header>
+        <div id="mode-toggle" onclick="styleToggle()">Color Mode</div>
+        <nav>
+            <a href="/">About</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+        </nav>
         <h1>Lucas Mace</h1>
-        <h2>Full Stack Developer</h2>
-        <section id="bio">
-            Put a link to my GIT after all projects.
-        </section>
-        <section id="headshot">
-            <img src="./headshot.jpg" />
-        </section>
+        <h2>Full Stack Web Developer</h2>
+        <h2>Projects</h2>
+    </header>
+    <main id="projects">
+        <div class="project">
+            <div class="project-image">
+                <img src="./projects/send_tn.jpg" alt="Twin Cities Send It Screenshot" />
+            </div>
+            <div class="project-info">
+                <h3>Twin Cities Send It</h3>
+                <p>Database of all grass hills in the Twin Cities and greater surrounding areas that are suitable to
+                    ride your bicycle down. Why? Because it's really fun. I built this project to familiarize myself
+                    with
+                    GraphQL. Complete with photos, videos and maps to each hill, this has become a favorite passion
+                    project
+                    of mine.
+                </p>
+
+                <p class="tech-stack-title">Tech Stack</p>
+                <p class="tech-stack">Vanilla JS, GraphQL, Express, MySQL</p>
+                <a href="http://twincitiessendit.com/" target="_blank" class="white-link tech-stack">Live Project</a>
+                <a href="https://github.com/macemke4130/Twin-Cities-Send-It" target="_blank"
+                    class="white-link tech-stack">GitHub Repository</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="./projects/coffee_tn.jpg" alt="Coffee Brewing Profile App Screenshot" />
+            </div>
+            <div class="project-info">
+                <h3>Coffee Brewing Profile App</h3>
+                <p>Proof of concept tool to help at home baristas to keep track of and maintain their coffee
+                    brewing techniques. Choose your preferred brewing method and the app frontloads your previous brew
+                    into the input fields to cut down on redundancies. I use this app almost every day. Feel free to
+                    sign up!
+                </p>
+
+                <p class="tech-stack-title">Tech Stack</p>
+                <p class="tech-stack">React JS, TypeScript, Express, Passport, BCrypt, MySQL, WebPack, React Router</p>
+                <a href="https://coffee-brew-profiler.herokuapp.com/" target="_blank" class="white-link tech-stack">Live
+                    Project</a>
+                <a href="https://github.com/macemke4130/Coffee-Brew-Profiler" target="_blank"
+                    class="white-link tech-stack">GitHub Repository</a>
+            </div>
+        </div>
     </main>
     <script src="index.js"></script>
 </body>

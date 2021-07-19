@@ -1,0 +1,36 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1em 1em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.job {
+    font-size: 1.2em;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.job-title {
+    font-size: 1em;
+}
+
+.job-date {
+    font-size: 0.8em;
+}
+
+.job-description {
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.resume-break {
+    width: 50%;
+    margin: 1em 1em;
+}

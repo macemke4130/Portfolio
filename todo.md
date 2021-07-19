@@ -1,15 +1,17 @@
 # Still To Do
 
-- Hamburger menu for mobile
+- Scroll Bar Dissapearing on some resizes. Overflow hidden?
+- Fancier Console Window Message with Styles
 - Trim Bio
 - Take good headshot
 - Portfolio page
+    - Should be FlexBox and not Grid
     - Transparant CSS
     - Coffee
     - TCSI
     - School Projects? One or two
     - Screen shots and links to projects
-    - Individual project pages
+    - Style the page
 - Resume
     - Download PDF link
     - HTML Resume
