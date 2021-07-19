@@ -1,22 +1,14 @@
 # Still To Do
 
-- Scroll Bar Dissapearing on some resizes. Overflow hidden?
 - Fancier Console Window Message with Styles
+- Local storage color mode for links
 - Trim Bio
 - Take good headshot
 - Portfolio page
-    - Should be FlexBox and not Grid
-    - Transparant CSS
-    - Coffee
-    - TCSI
-    - School Projects? One or two
-    - Screen shots and links to projects
-    - Style the page
+    - Transparant CSS Project
 - Resume
     - Download PDF link
-    - HTML Resume
     - Console Resume?
 - Contact
     - Email
     - Linked In
-    - GitHub

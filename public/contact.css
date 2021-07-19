@@ -1,0 +1,19 @@
+#contact { /* Main -- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.5em black;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}

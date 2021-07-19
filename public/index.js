@@ -7,7 +7,7 @@ const h2 = document.getElementsByTagName("h2");
 const h3 = document.getElementsByTagName("h3");
 const p = document.getElementsByTagName("p");
 const job = document.getElementsByClassName("job");
-const link = document.getElementsByClassName("white-link")[0];
+const link = document.getElementsByClassName("white-link");
 const nav = document.getElementsByTagName("nav")[0];
 const hamburger = document.getElementById("hamburger");
 
@@ -48,13 +48,16 @@ const toggleColor = () => {
     for (let i = 0; i < job.length; i++) {
         job[i].style.textShadow = "none";
     }
+
+    for (let i = 0; i < link.length; i++) {
+        link[i].style.color = "black";
+    }
 }
 
 const toggleDark = () => {
     button.innerHTML = "Color Mode";
     body.style.backgroundColor = "darkslategray";
     h1.style.color = "white";
-    // link.style.color = "white";
     hamburger.style.backgroundColor = "slategray";
     nav.style.backgroundColor = "darkslategray";
 
@@ -72,6 +75,10 @@ const toggleDark = () => {
 
     for (let i = 0; i < job.length; i++) {
         job[i].style.textShadow = "0.1em 0.1em 0.1em black";
+    }
+
+    for (let i = 0; i < link.length; i++) {
+        link[i].style.color = "white";
     }
 }
 
@@ -98,7 +105,6 @@ const windowSize = (e) => {
         // Hide Mobile Navigation --
         nav.style.display = "none";
         body.style.overflow = "visible";
-        console.log("Hide Mobile");
     }
 }
 

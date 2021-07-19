@@ -125,53 +125,6 @@ nav a:hover {
     grid-template-areas: 'bio headshot';
 }
 
-#projects { /* Main -- */
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 2em;
-    grid-template-areas: 'bio headshot';
-}
-
-#resume { /* Main -- */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-image {
-    display: flex;
-    justify-content: center;
-}
-
-.project-image img{
-    border-radius: 0.5em;
-    box-shadow: 0.5em 0.5em 2em black; 
-}
-
-.project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1em;
-}
-
-.project-info a {
-    padding: 0.25em;
-}
-
-.project img {
-    width: 50%;
-}
-
 #bio {
     grid-area: bio;
 }
@@ -201,20 +154,16 @@ nav a:hover {
     font-weight: bold;
 }
 
-.tech-stack-title {
-    margin-bottom: 0;
-}
-
-.tech-stack {
-    font-size: 0.8em;
-    text-align: center;
-}
-
 #bio, #headshot {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding: 1em;
+}
+
+hr {
+    width: 50%;
+    margin: 1em;
 }
 
 @media only screen and (max-width: 850px) {

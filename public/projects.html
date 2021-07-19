@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,26 +23,28 @@
         <div id="mode-toggle" onclick="styleToggle()">Color Mode</div>
         <nav>
             <a href="/">About</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./contact.html">Contact</a>
         </nav>
         <h1>Lucas Mace</h1>
         <h2>Full Stack Web Developer</h2>
-        <h2>Projects</h2>
+        <h2 class="bottom-bump">Projects</h2>
     </header>
     <main id="projects">
         <div class="project">
             <div class="project-image">
-                <img src="./projects/send_tn.jpg" alt="Twin Cities Send It Screenshot" />
+                <div class="img-link">
+                    <a href="http://twincitiessendit.com/" target="_blank">
+                        <img src="./projects/send_tn.jpg" alt="Twin Cities Send It Screenshot" />
+                    </a>
+                </div>
             </div>
             <div class="project-info">
                 <h3>Twin Cities Send It</h3>
                 <p>Database of all grass hills in the Twin Cities and greater surrounding areas that are suitable to
                     ride your bicycle down. Why? Because it's really fun. I built this project to familiarize myself
-                    with
-                    GraphQL. Complete with photos, videos and maps to each hill, this has become a favorite passion
-                    project
-                    of mine.
+                    with GraphQL. Complete with photos, videos and maps to each hill, this has become a favorite passion
+                    project of mine.
                 </p>
 
                 <p class="tech-stack-title">Tech Stack</p>
@@ -53,7 +56,11 @@
         </div>
         <div class="project">
             <div class="project-image">
-                <img src="./projects/coffee_tn.jpg" alt="Coffee Brewing Profile App Screenshot" />
+                <div class="img-link">
+                    <a href="https://coffee-brew-profiler.herokuapp.com/" target="_blank">
+                        <img src="./projects/coffee_tn.jpg" alt="Coffee Brewing Profile App Screenshot" />
+                    </a>
+                </div>
             </div>
             <div class="project-info">
                 <h3>Coffee Brewing Profile App</h3>
@@ -69,6 +76,25 @@
                     Project</a>
                 <a href="https://github.com/macemke4130/Coffee-Brew-Profiler" target="_blank"
                     class="white-link tech-stack">GitHub Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <div class="img-link">
+                    <a href="https://github.com/macemke4130?tab=repositories" target="_blank">
+                        <img src="./projects/gh_tn.jpg" alt="GitHub Repository" />
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>GitHub</h3>
+                <p>Just a link to my GitHub Profile. Plenty of small projects from school here. Poke around if you'd
+                    like.
+                </p>
+
+                <a href="https://github.com/macemke4130?tab=repositories" target="_blank"
+                    class="white-link tech-stack">GitHub</a>
             </div>
         </div>
     </main>
