@@ -21,6 +21,7 @@ p {
 .job {
     font-size: 1.2em;
     text-shadow: 0.1em 0.1em 0.1em black;
+    text-align: center;
 }
 
 .job-title {
